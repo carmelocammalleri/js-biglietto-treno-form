@@ -26,8 +26,8 @@
           <h5 class="card-title my-3">Inserisci i tuoi dati</h5>
           
           <div class="row">
-            <div class="col-4  text-name">
-              <input class="form-control" type="text" placeholder="Nome e Cognome">
+            <div class="col-4">
+              <input id="text-name" class="form-control" type="text" placeholder="Nome e Cognome">
             </div>
   
             <div class="col-4 text-Km">
@@ -47,13 +47,27 @@
           </div>
   
           <div class="button-submit my-3">
-            <button href="#" class="btn btn-primary">Genera</button>
+            <button id="btn-submit" href="#" class="btn btn-primary">Genera</button>
             <button href="#" class="btn btn-primary">Annulla</button>
           </div>
   
         </div>
-        <div class="card-footer text-ticket-compleate">
-          biglietto tuo bello
+        <div class="card-footer text-ticket d-none">
+          <div class="row border-black ">
+            <div class="col-3 ">
+              <h6> Nome</h6>
+            </div>
+            <div class="col-5 ">
+              <h6> Tipologia biglietto</h6>
+            </div>
+            <div class="col-2 ">
+              <h6> Chilometri</h6>
+            </div>
+            <div class="col-2 ">
+              <h6> Prezzo</h6>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
