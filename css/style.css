@@ -2,3 +2,7 @@ main {
   background-color: maroon;
   height: 100vh;
 }
+
+.ticket-info {
+  box-shadow: 5px 5px 5px rgba(105, 105, 105, 0.589);
+}
