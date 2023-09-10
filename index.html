@@ -28,17 +28,17 @@
           <div class="row">
             <div class="col-4">
               <h6>Indica il tuo nome</h6>  
-              <input id="text-name" class="form-control" type="text" placeholder="Nome e Cognome">
+              <input id="text-name" class="form-control" type="text" autocomplete="off" placeholder="Nome e Cognome">
             </div>
   
             <div class="col-4">
               <h6>Indica i KM che farai </h6>  
-              <input id="travel-km" class="form-control" type="text" placeholder="Chilometri da percorrere">
+              <input id="travel-km" class="form-control" type="text" autocomplete="off" placeholder="Chilometri da percorrere">
             </div>
   
             <div class="col-4 ">
               <h6>Indica la tua fascia d'età </h6>   
-              <select id="age" class="form-select" aria-label="Default select example" >
+              <select id="age" class="form-select" aria-label="Default select example" autocomplete="off">
                 <option selected></option>
                 <option value="Under-18">Minorenne</option>
                 <option value="Normal">Maggiorenne</option>
@@ -50,7 +50,7 @@
   
           <div class="button-submit my-3">
             <button id="btn-submit" href="#" class="btn btn-primary">Genera</button>
-            <button id="btn-close" href="#" class="btn btn-primary">Annulla</button>
+            <button id="btn-close" href="#" class="btn btn-primary" onclick="window.location.reload();">Annulla</button>
           </div>
   
         </div>
