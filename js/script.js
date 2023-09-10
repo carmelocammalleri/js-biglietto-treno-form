@@ -21,12 +21,14 @@ btn.addEventListener('click', function(){
   let age = document.getElementById('age').value;
   let typeOfTicket = document.getElementById('ticket-class');
 
+  typeOfTicket.innerHTML = age;
+
   //WAGON
   let carr = document.getElementById('wagon');
   let min = 1000;
   let max = 9999;
   let numRandom = Math.floor(Math.random() * (max - min + 1 )) + min;
-  carr.innerHTML=numRandom
+  carr.innerHTML= numRandom;
 
   // TRAVEL-KM
   let travelKm = parseInt (document.getElementById('travel-km').value);
@@ -42,7 +44,11 @@ btn.addEventListener('click', function(){
   //DISCOUNT
   const U18 = 0.8;
   const O65 = 0.6;
-  if(age == under 18)
+  if (age == 'Under-18'){
+    price.innerHTML = priceTicket * U18;
+  } else if(age == 'Over-65'){
+    price.innerHTML = priceTicket * O65;
+  }
   
 
   console.log(priceTicket);
