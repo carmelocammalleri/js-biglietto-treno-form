@@ -3,12 +3,7 @@
 const btn = document.getElementById('btn-submit');
 const btnClose = document.getElementById('btn-close');
 const ticket = document.querySelector('.text-ticket');
-
-
-
-
-
-
+const info = document.querySelector('.ticket-info')
 
 btn.addEventListener('click', function(){
   ticket.classList.remove ('d-none');
@@ -38,17 +33,20 @@ btn.addEventListener('click', function(){
 
   // PRICE-TICKET
   const priceKm = 0.21;
-  let priceTicket= travelKm * priceKm;
+  let priceTicket = parseFloat(travelKm * priceKm);
   let price = document.getElementById('prices');
-  price.innerHTML = priceTicket;
+  price.innerHTML = `${priceTicket} €` ;
 
   //DISCOUNT
-  const U18 = 0.8;
-  const O65 = 0.6;
+  const U20 = 0.8;
+  const O40 = 0.6;
+  let u18 = priceTicket * U20;
+  let o65 = priceTicket * O40;
+
   if (age == 'Under-18'){
-    price.innerHTML = priceTicket * U18;
+    price.innerHTML = `${u18.toFixed(2)} €`;
   } else if(age == 'Over-65'){
-    price.innerHTML = priceTicket * O65;
+    price.innerHTML = `${o65.toFixed(2)} €`;
   }
 })
 
