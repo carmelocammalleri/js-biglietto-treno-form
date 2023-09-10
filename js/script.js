@@ -19,11 +19,14 @@ btn.addEventListener('click', function(){
 
   // TICKET-CLASS
   let age = document.getElementById('age').value;
-  console.log(age);
   let typeOfTicket = document.getElementById('ticket-class');
 
   //WAGON
   let carr = document.getElementById('wagon');
+  let min = 1000;
+  let max = 9999;
+  let numRandom = Math.floor(Math.random() * (max - min + 1 )) + min;
+  carr.innerHTML=numRandom
 
   // TRAVEL-KM
   let travelKm = parseInt (document.getElementById('travel-km').value);
@@ -35,6 +38,11 @@ btn.addEventListener('click', function(){
   let priceTicket= travelKm * priceKm;
   let price = document.getElementById('prices');
   price.innerHTML = priceTicket;
+
+  //DISCOUNT
+  const U18 = 0.8;
+  const O65 = 0.6;
+  if(age == under 18)
   
 
   console.log(priceTicket);
