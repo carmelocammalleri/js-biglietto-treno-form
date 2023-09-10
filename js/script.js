@@ -2,6 +2,7 @@
 
 const btn = document.getElementById('btn-submit');
 const btnClose = document.getElementById('btn-close');
+const ticket = document.querySelector('.text-ticket');
 
 
 
@@ -10,8 +11,8 @@ const btnClose = document.getElementById('btn-close');
 
 
 btn.addEventListener('click', function(){
-  let ticket = document.querySelector('.text-ticket');
-
+  ticket.classList.remove ('d-none');
+  
   // NAME
   let name = document.getElementById('text-name').value;
   let passenger = document.getElementById('person');
@@ -49,9 +50,8 @@ btn.addEventListener('click', function(){
   } else if(age == 'Over-65'){
     price.innerHTML = priceTicket * O65;
   }
-  
-
-  console.log(priceTicket);
-  ticket.classList.remove ('d-none');
-
 })
+
+btnClose.addEventListener('click', function(){
+  ticket.classList.add ('d-none')
+});
