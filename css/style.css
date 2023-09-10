@@ -6,3 +6,15 @@ main {
 .ticket-info {
   box-shadow: 5px 5px 5px rgba(105, 105, 105, 0.589);
 }
+
+.ticket {
+  border: 1px dotted black;
+  border-radius: 20px;
+  padding: 20px 0;
+}
+
+.image{
+  width: 95px;
+  top: -5px;
+  right: 55px;
+}
