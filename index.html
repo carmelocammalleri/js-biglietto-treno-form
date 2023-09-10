@@ -27,23 +27,25 @@
           
           <div class="row">
             <div class="col-4">
+              <h6>Indica il tuo nome</h6>  
               <input id="text-name" class="form-control" type="text" placeholder="Nome e Cognome">
             </div>
   
             <div class="col-4">
+              <h6>Indica i KM che farai </h6>  
               <input id="travel-km" class="form-control" type="text" placeholder="Chilometri da percorrere" >
             </div>
   
-            <div class="col-4 dropdown age-class">
-              <button class="btn btn-secondary dropdown-toggle" type="button">
-                La tua età
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Minorenne</a></li>
-                <li><a class="dropdown-item" href="#">Maggiorenne</a></li>
-                <li><a class="dropdown-item" href="#">Over-65</a></li>
-              </ul>
+            <div class="col-4 ">
+              <h6>Indica la tua fascia d'età </h6>   
+              <select id="age" class="form-select" aria-label="Default select example" >
+                <option selected></option>
+                <option value="under-18">Minorenne</option>
+                <option value="normal">Maggiorenne</option>
+                <option value="over-65">Over 65</option>
+              </select>
             </div>
+            
           </div>
   
           <div class="button-submit my-3">
@@ -54,17 +56,25 @@
         </div>
         <div class="card-footer text-ticket d-none">
           <div class="row border-black ">
-            <div class="col-3 ">
+            <div class="col-4 ">
               <h6> Nome</h6>
+              <p id="person">-</p>
             </div>
-            <div class="col-5 ">
+            <div class="col-3 ">
               <h6> Tipologia biglietto</h6>
+              <p>-</p>
             </div>
-            <div class="col-2 ">
+            <div class="col-2">
+              <h6>Carrozza n°</h6>
+              <p id="Wagon">-</p>
+            </div>
+            <div class="col-1 ">
               <h6> Chilometri</h6>
+              <p id="kmetres">-</p>
             </div>
             <div class="col-2 ">
               <h6> Prezzo</h6>
+              <p id="prices">-</p>
             </div>
           </div>
           
