@@ -17,6 +17,14 @@ btn.addEventListener('click', function(){
   let passenger = document.getElementById('person');
   passenger.innerHTML = name;
 
+  // TICKET-CLASS
+  let age = document.getElementById('age').value;
+  console.log(age);
+  let typeOfTicket = document.getElementById('ticket-class');
+
+  //WAGON
+  let carr = document.getElementById('wagon');
+
   // TRAVEL-KM
   let travelKm = parseInt (document.getElementById('travel-km').value);
   let Kilometres = document.getElementById('kmetres');
@@ -24,11 +32,11 @@ btn.addEventListener('click', function(){
 
   // PRICE-TICKET
   const priceKm = 0.21;
-  let priceTicket= travelKm * priceKm
-  let price = document.getElementById('prices')
-  price.innerHTML = priceTicket
+  let priceTicket= travelKm * priceKm;
+  let price = document.getElementById('prices');
+  price.innerHTML = priceTicket;
   
-  
+
   console.log(priceTicket);
   ticket.classList.remove ('d-none');
 
